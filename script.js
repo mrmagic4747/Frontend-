@@ -4,7 +4,7 @@ async function askAI() {
   responseBox.innerText = "Thinking...";
 
   try {
-    const res = await fetch("https://cybershield-god.onrender.com/ask", {
+    const res = await fetch("https://cybershield-god.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ prompt }),
